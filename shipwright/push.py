@@ -18,6 +18,7 @@ def push(client, (image, tag)):
     client.push(
       image,
       tag, 
-      stream=True
+      stream=True,
+      insecure_registry=True
     )
   )
